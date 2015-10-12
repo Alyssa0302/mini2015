@@ -1,10 +1,11 @@
 <Alloy>
 	<Collection src="webNews" />
+	<!-- <Collection src="events" /> -->
 	
 	<TabGroup>
 		<Tab title="Tab 1" icon="KS_nav_ui.png" id="newsTab1">
-			<Window title="webNews" >
-				<TableView dataCollection="webNews" dataTransform="transformFunction" onClick="Click1" >
+			<Window title="WEBNEWS" >
+				<TableView dataCollection="webNews" dataTransform="transformFunction" onClick="newsClick1" >
 					<TableViewRow layout="vertical" v_id="{id}">
 						<ImageView image="{image}" top="20dp" />
 						<Label text="{name}" bottom="20dp" />
@@ -12,20 +13,34 @@
 				</TableView>
 			</Window>
 		</Tab>
-		<Tab title="Tab 2" icon="KS_nav_views.png" id="eventTab2">
-			<Window title="News_Info">
-				<TableView dataCollection="webNews" dataTransform="transformFunction" onclick="Click2" >
-					<TableViewRow title="{organizer}"  fid="{organizer}"/>
+		<Tab title="Tab 2" icon="KS_nav_views.png" id="eventTab1">
+			<Window title="EVENT">
+				<TableView dataCollection="webNews" dataTransform="transformFunction" onclick="eventClick1" >
+					<TableViewRow title="{organizer}"  v_id="{id}"/>
 				</TableView>
 			</Window>
 		</Tab>
-		<Tab title="Tab 2" icon="KS_nav_views.png" id="eventTab2">
-			<Window title="News_Info">
-				<TableView dataCollection="webNews" dataTransform="transformFunction" onclick="Click2" >
+		<Tab title="Tab 3" icon="KS_nav_views.png" id="eventTab2">
+			<Window title="EVENT">
+				<!-- <TableView dataCollection="events" dataTransform="transformFunction" onclick="eventClick2" >
 					<TableViewRow title="{organizer}"  fid="{organizer}"/>
-				</TableView>
+				</TableView> -->
 			</Window>
 		</Tab>
-		
+		<Tab title="Tab 4" icon="KS_nav_views.png" id="mapTab">
+			<Window title="MAP">
+				<!-- <Module id="mapView" module="ti.map" method="createView" userLocation="true" onClick="mapClick">
+				</Module>
+				<Annotation id='acHall'/>
+				<Annotation id='waiHang'/> -->
+			</Window>
+		</Tab>
+		<Tab title="Tab 5" icon="KS_nav_views.png" id="logTab">
+			<Window title="PERSONAL CENTER">
+				<!-- <TableView dataCollection="events" dataTransform="transformFunction" onclick="eventClick2" >
+					<TableViewRow title="{organizer}"  fid="{organizer}"/>
+				</TableView> -->
+			</Window>
+		</Tab>
 	</TabGroup>
 </Alloy>

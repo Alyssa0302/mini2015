@@ -29,6 +29,10 @@ exports.definition = {
 				return Backbone.Collection.prototype.fetch.call(this, options);
 			}
 			*/
+		    
+		    comparator:function(model){
+		    	return model.get("CampusID");
+		    }
 		});
 
 		return Collection;

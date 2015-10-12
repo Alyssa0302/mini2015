@@ -23,3 +23,12 @@ function filterFunction(collection){
 	console.log(fid+"222222");
 return collection.where({id:fid});
 };
+
+function eventClick3(e) { 
+	
+	var eventListController = Alloy.createController('map_1', {
+		fid: e.row.v_id
+	});
+	console.log(e.row.v_id);
+	Alloy.Globals.TabGroup.getActiveTab().open(eventListController.getView());
+};

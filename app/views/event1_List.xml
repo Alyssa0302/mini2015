@@ -1,0 +1,11 @@
+<Alloy>
+	<Collection src="webNews"/>
+	
+	<Window title="Event" id="eventTab1">
+		<TableView dataCollection="webNews" onClick="eventClick1">
+			<TableViewRow layout="vertical" v_id="{id}">
+				<Label text="{text}" bottom="20dp"/>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

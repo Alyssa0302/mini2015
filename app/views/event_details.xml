@@ -1,7 +1,8 @@
 <Alloy>
 	<Collection src="webNews" />
+	
 	<Window id='win'>
-		<TableView dataCollection="webNews" dataTransform="transformFunction" dataFilter="filterFunction" >
+		<TableView dataCollection="webNews" dataTransform="transformFunction" dataFilter="filterFunction" onClick="eventClick3">
 			<TableViewRow layout="vertical" >
 				<ImageView image="{image}" top="20dp" />
 				<Label text="{fullDes}" bottom="20dp" />

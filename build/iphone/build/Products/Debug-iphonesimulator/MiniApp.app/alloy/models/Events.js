@@ -14,7 +14,11 @@ exports.definition = {
         return Model;
     },
     extendCollection: function(Collection) {
-        _.extend(Collection.prototype, {});
+        _.extend(Collection.prototype, {
+            comparator: function(model) {
+                return model.get("CampusID");
+            }
+        });
         return Collection;
     }
 };

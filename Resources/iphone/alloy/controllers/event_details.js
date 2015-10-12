@@ -8,31 +8,31 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    function __alloyId23(e) {
+    function __alloyId43(e) {
         if (e && e.fromAdapter) return;
-        __alloyId23.opts || {};
-        var models = filterFunction(__alloyId22);
+        __alloyId43.opts || {};
+        var models = filterFunction(__alloyId42);
         var len = models.length;
         var rows = [];
         for (var i = 0; len > i; i++) {
-            var __alloyId15 = models[i];
-            __alloyId15.__transform = transformFunction(__alloyId15);
-            var __alloyId17 = Ti.UI.createTableViewRow({
+            var __alloyId35 = models[i];
+            __alloyId35.__transform = transformFunction(__alloyId35);
+            var __alloyId37 = Ti.UI.createTableViewRow({
                 layout: "vertical"
             });
-            rows.push(__alloyId17);
-            var __alloyId19 = Ti.UI.createImageView({
-                image: "undefined" != typeof __alloyId15.__transform["image"] ? __alloyId15.__transform["image"] : __alloyId15.get("image"),
+            rows.push(__alloyId37);
+            var __alloyId39 = Ti.UI.createImageView({
+                image: "undefined" != typeof __alloyId35.__transform["image"] ? __alloyId35.__transform["image"] : __alloyId35.get("image"),
                 top: "20dp"
             });
-            __alloyId17.add(__alloyId19);
-            var __alloyId21 = Ti.UI.createLabel({
-                text: "undefined" != typeof __alloyId15.__transform["fullDes"] ? __alloyId15.__transform["fullDes"] : __alloyId15.get("fullDes"),
+            __alloyId37.add(__alloyId39);
+            var __alloyId41 = Ti.UI.createLabel({
+                text: "undefined" != typeof __alloyId35.__transform["fullDes"] ? __alloyId35.__transform["fullDes"] : __alloyId35.get("fullDes"),
                 bottom: "20dp"
             });
-            __alloyId17.add(__alloyId21);
+            __alloyId37.add(__alloyId41);
         }
-        $.__views.__alloyId14.setData(rows);
+        $.__views.__alloyId34.setData(rows);
     }
     function transformFunction(model) {
         var transform = model.toJSON();
@@ -47,6 +47,13 @@ function Controller() {
         return collection.where({
             id: fid
         });
+    }
+    function eventClick3(e) {
+        var eventListController = Alloy.createController("map_1", {
+            fid: e.row.v_id
+        });
+        console.log(e.row.v_id);
+        Alloy.Globals.TabGroup.getActiveTab().open(eventListController.getView());
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "event_details";
@@ -64,24 +71,27 @@ function Controller() {
     }
     var $ = this;
     var exports = {};
+    var __defers = {};
     Alloy.Collections.instance("webNews");
     $.__views.win = Ti.UI.createWindow({
         id: "win"
     });
     $.__views.win && $.addTopLevelView($.__views.win);
-    $.__views.__alloyId14 = Ti.UI.createTableView({
-        id: "__alloyId14"
+    $.__views.__alloyId34 = Ti.UI.createTableView({
+        id: "__alloyId34"
     });
-    $.__views.win.add($.__views.__alloyId14);
-    var __alloyId22 = Alloy.Collections["webNews"] || webNews;
-    __alloyId22.on("fetch destroy change add remove reset", __alloyId23);
+    $.__views.win.add($.__views.__alloyId34);
+    var __alloyId42 = Alloy.Collections["webNews"] || webNews;
+    __alloyId42.on("fetch destroy change add remove reset", __alloyId43);
+    eventClick3 ? $.addListener($.__views.__alloyId34, "click", eventClick3) : __defers["$.__views.__alloyId34!click!eventClick3"] = true;
     exports.destroy = function() {
-        __alloyId22.off("fetch destroy change add remove reset", __alloyId23);
+        __alloyId42.off("fetch destroy change add remove reset", __alloyId43);
     };
     _.extend($, $.__views);
     var args = arguments[0] || {};
     var fid = args.fid || {};
     Alloy.Collections.webNews.fetch();
+    __defers["$.__views.__alloyId34!click!eventClick3"] && $.addListener($.__views.__alloyId34, "click", eventClick3);
     _.extend($, exports);
 }
 

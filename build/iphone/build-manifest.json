@@ -2967,72 +2967,72 @@
 		},
 		"KS_nav_ui.png": {
 			"hash": "44b858efb4281fd3445f546578c0416e",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 1158
 		},
 		"KS_nav_views.png": {
 			"hash": "255898b8828b2933109ae3964c07bace",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 1074
 		},
 		"Venue.sqlite": {
 			"hash": "5d32fb977dcfb3477fdaa8d55c66d8b2",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 80896
 		},
 		"iTunesArtwork": {
 			"hash": "9dad22d287c61a10be5993082f017d38",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 151843
 		},
 		"iTunesArtwork@2x": {
 			"hash": "7de60328649d012243353d89c250f2e8",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 211013
 		},
 		"appicon-60@2x.png": {
 			"hash": "be3c0fb03756f3ee56a0097c04b03277",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 22811
 		},
 		"appicon-60@3x.png": {
 			"hash": "96acee48393ec23307347a921e1ed9c9",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 40399
 		},
 		"appicon-Small-40@2x.png": {
 			"hash": "f12de23518e2a1a093949469bd2549a1",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 10583
 		},
 		"appicon-Small@2x.png": {
 			"hash": "810fe7c810f7bea1d4553ca1ee8ad372",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 6254
 		},
 		"Default-568h@2x.png": {
 			"hash": "7c162b498ea9255488db3baf191d55fc",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 502634
 		},
 		"Default-667h@2x.png": {
 			"hash": "cdba9c1dc1d00bb40c107970ab1ed5f1",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 773314
 		},
 		"Default-Landscape-736h@3x.png": {
 			"hash": "d98f5e158810775461d402c54baf1c94",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 1863539
 		},
 		"Default-Portrait-736h@3x.png": {
 			"hash": "8f37e1fb95f588d3e81cdfb244730b84",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 1734238
 		},
 		"Default@2x.png": {
 			"hash": "a9de39ae235125f5d00fe33052767898",
-			"mtime": "2015-10-12T11:11:48.000Z",
+			"mtime": "2015-10-12T18:49:46.000Z",
 			"size": 343708
 		},
 		"Classes/ApplicationRouting.m": {

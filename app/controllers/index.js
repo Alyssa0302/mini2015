@@ -10,7 +10,7 @@ function transformFunction(model) {
 	return transform;
 }
 
-function Click1(e) { 
+function newsClick1(e) { 
 	
 	var eventListController = Alloy.createController('event_details', {
 		fid: e.row.v_id
@@ -19,20 +19,11 @@ function Click1(e) {
 	Alloy.Globals.TabGroup.getActiveTab().open(eventListController.getView());
 };
 
-function Click2(e) { 	
+function eventClick1(e) { 	
 	// alert(e.row.fid);
-	var eventListController = Alloy.createController('eventList', {
+	var eventListController = Alloy.createController('event1_Info', {
 		fid : e.row.v_id
 	});
-	Alloy.Globals.TabGroup.open(eventListController.getView());
+	Alloy.Globals.TabGroup.getActiveTab().open(eventListController.getView());
 };
-
-/*function Click3(e) { 	
-	var eventListController = Alloy.createController('eventList', {
-		fid : e.row.fid
-	});
-	Alloy.Globals.TabGroup.open(eventListController.getView());
-};
-*/
-
 
