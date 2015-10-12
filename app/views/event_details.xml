@@ -1,0 +1,11 @@
+<Alloy>
+	<Collection src="webNews" />
+	<Window id='win'>
+		<TableView dataCollection="webNews" dataTransform="transformFunction" dataFilter="filterFunction" >
+			<TableViewRow layout="vertical" >
+				<ImageView image="{image}" top="20dp" />
+				<Label text="{fullDes}" bottom="20dp" />
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,31 @@
+<Alloy>
+	<Collection src="webNews" />
+	
+	<TabGroup>
+		<Tab title="Tab 1" icon="KS_nav_ui.png" id="newsTab1">
+			<Window title="webNews" >
+				<TableView dataCollection="webNews" dataTransform="transformFunction" onClick="Click1" >
+					<TableViewRow layout="vertical" v_id="{id}">
+						<ImageView image="{image}" top="20dp" />
+						<Label text="{name}" bottom="20dp" />
+					</TableViewRow>
+				</TableView>
+			</Window>
+		</Tab>
+		<Tab title="Tab 2" icon="KS_nav_views.png" id="eventTab2">
+			<Window title="News_Info">
+				<TableView dataCollection="webNews" dataTransform="transformFunction" onclick="Click2" >
+					<TableViewRow title="{organizer}"  fid="{organizer}"/>
+				</TableView>
+			</Window>
+		</Tab>
+		<Tab title="Tab 2" icon="KS_nav_views.png" id="eventTab2">
+			<Window title="News_Info">
+				<TableView dataCollection="webNews" dataTransform="transformFunction" onclick="Click2" >
+					<TableViewRow title="{organizer}"  fid="{organizer}"/>
+				</TableView>
+			</Window>
+		</Tab>
+		
+	</TabGroup>
+</Alloy>
