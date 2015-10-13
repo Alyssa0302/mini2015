@@ -1,0 +1,38 @@
+"Window": {
+	backgroundColor: "#fff"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+} 
+
+"TextArea": {
+left: "10dp",
+right: "10dp",
+editable:"false",
+scrollable:"false",
+}
+
+"#acHall": {
+     latitude: 22.341072,
+     longitude: 114.179645,
+     title: "AC Hall",
+     subtitle: "Correct Position",
+}
+"#waiHang": {
+     latitude: 22.337832,
+     longitude: 114.181962,
+     title: "Wai Hang",
+     subtitle: "Incorrect Position, never-mind.",
+}
+
+"Annotation[platform=ios]": {
+     rightButton: Titanium.UI.iPhone.SystemButton.DISCLOSURE
+}

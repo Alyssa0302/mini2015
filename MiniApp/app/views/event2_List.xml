@@ -1,0 +1,11 @@
+<Alloy>
+	<Collection src="Venue"/>
+	
+	<Window title="Event" id="eventTab2" dataFliter="filterFunction" onClick="eventClick4">
+		<TableView dataCollection="Venue" >
+			<TableViewRow layout="vertical" fid="{id}">
+				<Label text="{text}" bottom="20dp"/>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>
