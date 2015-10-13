@@ -7,7 +7,7 @@ exports.definition = {
 			collection_name: "Venue",
 			
 			"db_file": "/Venue.sqlite",
-			"idAttribute": "id"
+			"idAttribute": "VenueID"
 		}
 	},
 	extendModel: function(Model) {

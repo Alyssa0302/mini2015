@@ -1,11 +1,6 @@
 $.index.open();
 
-var route = Alloy.Globals.Map.createRoute({
-    points: [
-           {latitude: 22.341072, longitude: 114.179645},
-           {latitude: 22.337832, longitude: 114.181962},
-] });
-$.mapView.addRoute(route);
+
 
 Alloy.Collections.webNews.fetch();
 Alloy.Collections.Venue.fetch();
@@ -33,7 +28,8 @@ function eventClick1(e) {
 		fid : e.row.v_id
 	});
 	// var eventListController = Alloy.createController('event1_Info');
-	// $.eventTab1.open(eventListController.getView());
+	console.log(e.row.v_id);
+	$.eventTab1.open(eventListController.getView());
 };
 
 function mapClick(e){

@@ -2,7 +2,7 @@
 	<Collection src="webNews"/>
 	
 	<Window title="Event" id="eventTab1">
-		<TableView dataCollection="webNews" dataTransform="transformFunction" dataFilter="filterFunction" onClick="eventClick2">
+		<TableView dataCollection="webNews" dataFilter="filterFunction" onClick="eventClick2">
 			<TableViewRow  v_id="{id}">
 				<Label text="{name}" />
 			</TableViewRow>
