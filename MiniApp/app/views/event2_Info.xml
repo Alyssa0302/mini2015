@@ -1,8 +1,9 @@
 <Alloy>
+	<Collection src="Venue"/>
 	<Collection src="webNews"/>
 	
 	<Window title="Event" id="win">
-		<TableView dataCollection="webNews" dataFilter="filterFunction" onClick="eventClick2">
+		<TableView dataCollection="webNews" dataFilter="filterFunction" onClick="eventClick4">
 			<TableViewRow  v_id="{id}">
 				<Label text="{name}" bottom="20dp" />
 			</TableViewRow>

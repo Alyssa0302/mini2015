@@ -3,6 +3,10 @@ var fid=args.fid ||{};
 
 Alloy.Collections.webNews.fetch();
 
+$.win.addEventListener("close",function(){
+	$.destroy();
+});
+
 function transformFunction(model) { 
 	var transform = model.toJSON(); 
 	
@@ -14,10 +18,6 @@ function transformFunction(model) {
 	return transform; 
 }
 
-// $.win.addEventListener("close",function(){
-	// $.destroy();
-// });
-
 function filterFunction(collection){
 	console.log(args.fid);
 	console.log(fid+"222222");
@@ -26,7 +26,7 @@ function filterFunction(collection){
 
 function eventClick3(e) { 
 	
-	var eventListController = Alloy.createController('map_1', {
+	var eventListController = Alloy.createController('map_details', {
 		fid: e.row.v_id
 	});
 	console.log(e.row.v_id);
