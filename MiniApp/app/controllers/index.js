@@ -58,7 +58,8 @@ function transformFunction1(model){
 function eventClick2(e) { 	
 	// alert(e.row.fid);
 	var eventListController = Alloy.createController('event2_Info', {
-		fid : e.row.v_id
+		fid : e.row.v_id,
+		source: "tab3"
 	});
 	console.log(e.row.v_id);
 	Alloy.Globals.TabGroup.activeTab.open(eventListController.getView());

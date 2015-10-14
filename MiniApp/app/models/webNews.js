@@ -26,7 +26,7 @@ exports.definition = {
 				"addModifiedToUrl":true,
 				"lastModifiedColumn":"modified"
 		 },
-				"parentNode":"posts"
+				// "parentNode":"posts"
 	},
 	
 	extendModel: function(Model) {

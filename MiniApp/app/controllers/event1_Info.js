@@ -3,7 +3,6 @@ var fid = args.fid || {};
 
 $.win.title = fid;
 
-Alloy.Collections.Venue.fetch();
 Alloy.Collections.webNews.fetch();
 
 $.win.addEventListener("close", function(){
@@ -11,14 +10,11 @@ $.win.addEventListener("close", function(){
 });
 
 function filterFunction(collection){
-	
-	console.log("i'm here");
-	
-	
-		return collection.where({venue:fid});
+	console.log(args.fid);
+	return collection.where({organizer:fid});
 };
 
-function eventClick4(e) { 	
+function eventClick2(e) { 	
 	var eventListController = Alloy.createController('event_details', {
 		fid : e.row.v_id
 	});
