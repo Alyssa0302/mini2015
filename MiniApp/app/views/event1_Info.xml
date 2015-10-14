@@ -3,9 +3,7 @@
 	
 	<Window title="Event" id="win">
 		<TableView dataCollection="webNews" dataFilter="filterFunction" onClick="eventClick2">
-			<TableViewRow  v_id="{id}">
-				<Label text="{name}" bottom="20dp" />
-			</TableViewRow>
+			<TableViewRow title="{name}" v_id="{id}" />
 		</TableView>
 	</Window>
 </Alloy>

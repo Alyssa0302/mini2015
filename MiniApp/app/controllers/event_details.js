@@ -1,5 +1,5 @@
 var args = arguments[0] || {};
-var fid=args.fid ||{};
+var fid = args.fid ||{};
 
 Alloy.Collections.webNews.fetch();
 

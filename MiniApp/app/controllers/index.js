@@ -7,11 +7,11 @@ Alloy.Globals.TabGroup = $.index;
 function transformFunction(model) { 
 	var transform = model.toJSON(); 
 	if (transform.thumbnail == null)
-	transform.thumbnail = "";
+	    transform.thumbnail = "";
 	return transform;
 }
 
-function newsClick1(e) { 
+function newsClick(e) { 
 	var eventListController = Alloy.createController('event_details', {
 		fid: e.row.v_id
 	});
@@ -81,4 +81,19 @@ function mapClick(e){
 		Alloy.Globals.TabGroup.activeTab.open(eventListController.getView());
 	}	
 };
+
+function logClick(e){
+	if(e.row.title =="Login")
+	   e.row.title = "Logoff";
+	else 
+	  return e.row.title = "Login";
+};
+
+function regClick(e){
+	var eventListController = Alloy.createController('event_registered', {
+		fid: e.row.v_id
+	});
+	console.log(fig+"1");
+	Alloy.Globals.TabGroup.activeTab.open(eventListController.getView());
+}
 

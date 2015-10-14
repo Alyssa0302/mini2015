@@ -1,4 +1,8 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Collection src="Venue"/>
+	
+	<Window title="MAP" id="win" narBarHidden="true" >
+		<Module id="mapView" module="ti.map" method="createView" userLocation="true" dataCollection="Venue"
+			dataFilter="locationfilterFunction" dataTransform="transformMap"/>	
+	</Window>
 </Alloy>
