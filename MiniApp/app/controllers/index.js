@@ -45,11 +45,12 @@ function eventClick1(e) {
 function transformFunction1(model){
 	var transform = model.toJSON();
 	var venueCampusID;
-	transform.title = transform.VenueID;
-	if (venueCampusID == transform.CampusID)
-		transform.CampusID = "";
+	 transform.title = transform.VenueID;
+	if (venueCampusID == transform.CampusID){
+		title = "";
+		}
 	else
-		transform.CampusID = transform.CampusID;
+		title = transform.CampusID;
 		venueCampusID = transform.CampusID;
 	return transform;
 	
@@ -67,17 +68,19 @@ function eventClick2(e) {
 };
 
 function mapClick(e){
-	var route = Alloy.Globals.Map.createRoute({
-		points: [
-           {latitude: 22.341072, longitude: 114.179645},
-           {latitude: 22.337832, longitude: 114.181962},
-           ] });
-        $.mapView.addRoute(route);
+	// var route = Alloy.Globals.Map.createRoute({
+		// points: [
+           // {latitude: 22.341072, longitude: 114.179645},
+           // {latitude: 22.337832, longitude: 114.181962},
+           // ] });
+        // $.mapView.addRoute(route);
 	if (e.clicksource == 'rightButton' && e.annotation.id == 'acHall'){
 		var eventListController = Alloy.createController('map_details', {
 		    fid: e.row.v_id
 		});
-		console.log(e.row.v_id);
+		
+		console.log("map Clicked");
+		alert("map Clicked");
 		Alloy.Globals.TabGroup.activeTab.open(eventListController.getView());
 	}	
 };
@@ -89,7 +92,7 @@ function logClick(e){
 	  return e.row.title = "Login";
 };
 
-function regClick(e){
+function regClick1(e){
 	var eventListController = Alloy.createController('event_registered', {
 		fid: e.row.v_id
 	});

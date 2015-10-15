@@ -32,3 +32,13 @@ function eventClick3(e) {
 	console.log(e.row.v_id);
 	Alloy.Globals.TabGroup.getActiveTab().open(eventListController.getView());
 };
+
+function addressClick(e){
+	var eventListController = Alloy.createController('map_details', {
+		VenueID:e.source.v_id
+	});
+	console.log("map");
+	Alloy.Globals.TabGroup.getActiveTab().open(eventListController.getView());
+};
+
+

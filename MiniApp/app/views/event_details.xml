@@ -6,6 +6,7 @@
 			<TableViewRow layout="vertical" >
 				<ImageView image="{image}" top="20dp" />
 				<Label text="{fullDes}" bottom="20dp" />
+				<Button title="Address"  v_id="{id}" onClick="addressClick"  left="20dp"/>
 			</TableViewRow>
 		</TableView>
 	</Window>
